@@ -24,7 +24,7 @@ public class HomeController extends BaseController {
 //        players.add("Stefan");
         //model.addAttribute("players", players);
         model.addAttribute("players", hockeyPlayerRepository.findAll());
-        model.addAttribute("user", "Friberg");
+        model.addAttribute("user", "Stefan");
 
         return "home"; //namnet på HTML filen som ska visas
 
