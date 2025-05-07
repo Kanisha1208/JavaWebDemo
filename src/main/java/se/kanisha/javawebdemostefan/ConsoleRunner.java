@@ -19,12 +19,12 @@ public class ConsoleRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         if(hockeyPlayerRepository.count() == 0) {
             HockeyPlayer hockeyPlayer = new HockeyPlayer();
-            hockeyPlayer.setAge(52);
+            hockeyPlayer.setAge(32);
             hockeyPlayer.setName("Friberg");
             hockeyPlayerRepository.save(hockeyPlayer);
 
             hockeyPlayer = new HockeyPlayer();
-            hockeyPlayer.setAge(50);
+            hockeyPlayer.setAge(30);
             hockeyPlayer.setName("Raymond");
             hockeyPlayerRepository.save(hockeyPlayer);
 

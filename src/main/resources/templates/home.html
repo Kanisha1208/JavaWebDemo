@@ -5,12 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Welcome to the start pages</h1>
+<h1>Welcome to the start page</h1>
 <h2 th:text="${user}"></h2>
 
-<div th:each="oneHockeyPlayer: ${players}" >
-    <h2 th:text="${oneHockeyPlayer.getName()}" ></h2>
-    <p th:text="${oneHockeyPlayer.getAge()}" ></p>
+<div th:each="oneHockeyPlayer: ${players}">
+    <h2 th:text="${oneHockeyPlayer.getName()}"></h2>
+    <p th:text="${oneHockeyPlayer.getAge()}"></p>
 
 </div>
 </body>
